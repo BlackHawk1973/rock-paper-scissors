@@ -26,7 +26,32 @@ public class Main {
                gameOver = false;
                continue;
             }
-            choiceComputer = random.nextInt(0,4);
+            choiceComputer = random.nextInt(1,4);
+
+            switch (choiceUser) {
+                case 1:
+                    System.out.print("Вы выбрали камень, а ");
+                    break;
+                case 2:
+                    System.out.print("Вы выбрали ножницы, а ");
+                    break;
+                case 3:
+                    System.out.print("Вы выбрали бумагу, а ");
+                    break;
+            }
+
+            switch (choiceComputer) {
+                case 1:
+                    System.out.println("компьютер выбрал камень");
+                    break;
+                case 2:
+                    System.out.println("компьютер выбрал ножницы");
+                    break;
+                case 3:
+                    System.out.println("компьютер выбрал бумагу");
+                    break;
+            }
+
             if (choiceUser == choiceComputer) {
                 System.out.println("Ничья!");
                 continue;
