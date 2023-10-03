@@ -54,13 +54,18 @@ public class Main {
 
             if (choiceUser == choiceComputer) {
                 System.out.println("Ничья!");
+                System.out.println();
                 continue;
             }
             if ((choiceUser == 1 && choiceComputer == 2) || (choiceUser == 2 && choiceComputer == 3) ||
-                    (choiceUser == 3 && choiceComputer == 1 ))
+                    (choiceUser == 3 && choiceComputer == 1 )) {
                 System.out.println("Вы победили!");
-            else
+                System.out.println();
+            }
+            else {
                 System.out.println("Компьютер победил!");
+                System.out.println();
+            }
         }
     }
 }
